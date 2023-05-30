@@ -9,6 +9,6 @@ jobs:
         id: tagName
       - name: Some ot
         run: echo ${{ steps.tagName.outputs.tag }}
-      - name: Yet another step # Environment variabl usage example
+      - name: Yet another step
         run: |
           echo $GIT_TAG_NAME
