@@ -1,11 +1,14 @@
 on:
   workflow_dispatch:
-  
+
 jobs:
   github-example-tags:
     runs-on: ubuntu-latest
     steps:
-     - name: GitHub Tag Name example
-       run: |
-         echo "Tag name from GITHUB_REF_NAME: $GITHUB_REF_NAME"
-         echo "Tag name from github.ref_name: ${{  github.ref_name }}"
+      - uses: olegtarasov/get-tag@v2.1.2
+        id: tagName
+      - name: Some ot
+        run: echo ${{ steps.tagName.outputs.tag }}
+      - name: Yet another step # Environment variabl usage example
+        run: |
+          echo $GIT_TAG_NAME
