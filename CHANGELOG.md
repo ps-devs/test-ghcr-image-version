@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/sarafpradumna/test-ghcr-version/compare/v1.0.2...v1.0.3) (2023-05-30)
+
+
+### Bug Fixes
+
+* Update hello.txt ([12d92bd](https://github.com/sarafpradumna/test-ghcr-version/commit/12d92bd7cb8a3b1d7b4ab20c347188c7913f05c1))
+
+
+
 ## [1.0.2](https://github.com/sarafpradumna/test-ghcr-version/compare/v1.0.1...v1.0.2) (2023-05-30)
 
 
