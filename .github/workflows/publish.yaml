@@ -45,5 +45,5 @@ jobs:
           push: true
           tags: |
             ghcr.io/sarafpradumna/test:latest
-            ghcr.io/sarafpradumna/test:${{steps.read_yaml.outputs['namespace']}}
+            ghcr.io/sarafpradumna/test:${{steps.read_yaml.outputs['version']}}
           labels: ${{ steps.meta.outputs.labels }}
