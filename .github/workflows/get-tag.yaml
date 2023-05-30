@@ -16,4 +16,4 @@ jobs:
 
       - name: use-yaml-file
         run: |
-          echo namespace: ${{ steps.read_yaml.outputs['namespace'] }}
+          echo namespace: ${{ steps.read_yaml.outputs['version'] }}
