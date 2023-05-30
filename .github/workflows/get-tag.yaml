@@ -2,13 +2,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  github-example-tags:
+  read-yaml:
     runs-on: ubuntu-latest
     steps:
-      - uses: olegtarasov/get-tag@v2.1.2
-        id: tagName
-      - name: Some ot
-        run: echo "${{ steps.tagName.outputs.tag }}"
-      - name: Yet another step
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: read-yaml-file
+        uses: pietrobolcato/action-read-yaml@1.0.0
+        id: read_yaml
+        with:
+          config: ${{ github.workspace }}/version.yaml
+
+      - name: use-yaml-file
         run: |
-          echo $GIT_TAG_NAME
+          echo namespace: ${{ steps.read_yaml.outputs['namespace'] }}
