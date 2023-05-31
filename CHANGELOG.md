@@ -1,3 +1,12 @@
+## [1.0.5](https://github.com/sarafpradumna/test-ghcr-version/compare/v1.0.4...v1.0.5) (2023-05-31)
+
+
+### Bug Fixes
+
+* Update release.yaml ([b9b9707](https://github.com/sarafpradumna/test-ghcr-version/commit/b9b97072ae6937782c48afc960978f7e11d48b46))
+
+
+
 ## [1.0.4](https://github.com/sarafpradumna/test-ghcr-version/compare/v1.0.3...v1.0.4) (2023-05-30)
 
 
